@@ -1,466 +1,668 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conexão Infância</title>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/conexão infância.svg" alt="Conexão Infância Logo" height="40">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#quem-somos">Quem Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#palestrantes">Palestrantes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#local">Local</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#inscricao">Inscrição</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contato">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero-section bg-light py-5">
-    <div class="container mt-5 pt-3">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <h1 class="display-4 fw-bold">Bem-vindo ao Conexão Infância!</h1>
-          <p class="lead">Um evento dedicado a fortalecer o trabalho interdisciplinar entre profissionais da infância, promovendo conhecimento, trocas e conexões que transformam vidas.</p>
-          <div class="event-details mt-4">
-            <p class="mb-2"><i class="far fa-calendar-alt me-2"></i> <strong>Data:</strong> 05 de abril de 2025</p>
-            <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> <strong>Local:</strong> Auditório 360, torre A, Pátio Brasil Shopping</p>
-            <p class="mb-2"><i class="far fa-clock me-2"></i> <strong>Duração:</strong> 08h30 às 18h30</p>
-          </div>
-          <div class="mt-4">
-            <a href="#inscricao" class="btn btn-tertiary btn-lg">Inscreva-se agora</a>
-          </div>
-        </div>
-        <div class="col-lg-6 text-center">
-          <!-- <img src="images/logo-vertical.svg" alt="Conexão Infância" class="img-fluid" style="width: 60%;"> -->
-          <img src="images/logo-semtexto.svg" alt="Conexão Infância" class="img-fluid" style="width: 75%;">
-          <!-- <img src="images/conexão infância.svg" alt="Conexão Infância" class="img-fluid"> -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quem Somos -->
-  <section id="quem-somos" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-4">
-          <h2 class="fw-bold">Quem Somos</h2>
-          <hr class="divider mx-auto" />
-        </div>
-
-        <div class="col-lg-12">
-          <div class="organizer-img mb-3">
-            <img src="images/juju_vanessa.jpg" alt="Vanessa Dias" class="img-fluid" style="object-fit: cover;">
-          </div>
-        </div>
-
-        <div class="col-lg-12 mx-auto fs-5">
-          <p class="mb-4">O <strong>Conexão Infância</strong> nasceu do desejo de unir profissionais que atuam no desenvolvimento infantil para um diálogo interdisciplinar, promovendo um olhar mais amplo e integrado sobre a infância.</p>
-          
-          <p class="mb-4">Somos <strong>Vanessa Dias</strong> e <strong>Juliana Barbosa</strong>, psicólogas apaixonadas pela infância e pelo impacto transformador do trabalho em equipe. Ao longo de nossas trajetórias, percebemos que cada profissional da infância contribui de forma única para o desenvolvimento das crianças, mas que, quando trabalhamos juntos, conseguimos fazer ainda mais.</p>
-          
-          <p class="mb-4">Foi dessa vontade de <strong>fazer mais pela infância</strong> que surgiu o Conexão Infância: um espaço para troca de conhecimento, construção de parcerias e fortalecimento do trabalho interdisciplinar. Acreditamos que, ao unir forças, podemos garantir um cuidado mais completo e respeitoso para cada criança.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conexão Infância</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/conexão infância.svg"
+            alt="Conexão Infância Logo"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quem-somos">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#palestrantes">Palestrantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#local">Local</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#inscricao">Inscrição</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-body text-center">
-              <h3 class="card-title fw-bold">Juliana Barbosa</h3>
-              <p class="card-text">Psicóloga e proprietária do <strong>Espaço Dialógico</strong>, comprometida em promover o diálogo entre as áreas da infância para um atendimento mais integrado e significativo.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="display-4 fw-bold">Bem-vindo ao Conexão Infância!</h1>
+            <p class="lead">
+              Um evento dedicado a fortalecer o trabalho interdisciplinar entre
+              profissionais da infância, promovendo conhecimento, trocas e
+              conexões que transformam vidas.
+            </p>
+            <div class="event-details mt-4">
+              <p class="mb-2">
+                <i class="far fa-calendar-alt me-2"></i>
+                <strong>Data:</strong> 05 de abril de 2025
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <strong>Local:</strong> Auditório 360, torre A, Pátio Brasil
+                Shopping
+              </p>
+              <p class="mb-2">
+                <i class="far fa-clock me-2"></i>
+                <strong>Duração:</strong> 08h30 às 18h30
+              </p>
+            </div>
+            <div class="mt-4">
+              <a href="#inscricao" class="btn btn-tertiary btn-lg"
+                >Inscreva-se agora</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <!-- <img src="images/logo-vertical.svg" alt="Conexão Infância" class="img-fluid" style="width: 60%;"> -->
+            <img
+              src="images/logo-semtexto.svg"
+              alt="Conexão Infância"
+              class="img-fluid"
+              style="width: 75%"
+            />
+            <!-- <img src="images/conexão infância.svg" alt="Conexão Infância" class="img-fluid"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="fw-bold">Quem Somos</h2>
+            <hr class="divider mx-auto" />
+          </div>
+
+          <div class="col-lg-12">
+            <div class="organizer-img mb-3">
+              <img
+                src="images/juju_vanessa.jpg"
+                alt="Vanessa Dias"
+                class="img-fluid"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-12 mx-auto fs-5">
+            <p class="mb-4">
+              O <strong>Conexão Infância</strong> nasceu do desejo de unir
+              profissionais que atuam no desenvolvimento infantil para um
+              diálogo interdisciplinar, promovendo um olhar mais amplo e
+              integrado sobre a infância.
+            </p>
+
+            <p class="mb-4">
+              Somos <strong>Juliana Barbosa</strong> e
+              <strong>Vanessa Dias</strong>, psicólogas apaixonadas pela
+              infância e pelo impacto transformador do trabalho em equipe. Ao
+              longo de nossas trajetórias, percebemos que cada profissional da
+              infância contribui de forma única para o desenvolvimento das
+              crianças, mas que, quando trabalhamos juntos, conseguimos fazer
+              ainda mais.
+            </p>
+
+            <p class="mb-4">
+              Foi dessa vontade de <strong>fazer mais pela infância</strong> que
+              surgiu o Conexão Infância: um espaço para troca de conhecimento,
+              construção de parcerias e fortalecimento do trabalho
+              interdisciplinar. Acreditamos que, ao unir forças, podemos
+              garantir um cuidado mais completo e respeitoso para cada criança.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body text-center">
+                <h3 class="card-title fw-bold">Juliana Barbosa</h3>
+                <p class="card-text">
+                  Psicóloga e proprietária do <strong>Espaço Dialógico</strong>,
+                  comprometida em promover o diálogo entre as áreas da infância
+                  para um atendimento mais integrado e significativo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-body text-center">
+                <h3 class="card-title fw-bold">Vanessa Dias</h3>
+                <p class="card-text">
+                  Psicóloga e proprietária do <strong>Espaço Floresça</strong>,
+                  dedicada a criar pontes entre os profissionais e as famílias
+                  para um desenvolvimento mais acolhedor e efetivo.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-body text-center">
-              <h3 class="card-title fw-bold">Vanessa Dias</h3>
-              <p class="card-text">Psicóloga e proprietária do <strong>Espaço Floresça</strong>, dedicada a criar pontes entre os profissionais e as famílias para um desenvolvimento mais acolhedor e efetivo.</p>
-            </div>
+      </div>
+    </section>
+
+    <!-- Palestrantes e Programação -->
+    <section id="palestrantes" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="fw-bold">Palestrantes e Programação</h2>
+            <p class="lead">
+              Confira os especialistas que farão parte do evento e os temas que
+              serão abordados
+            </p>
+            <hr class="divider mx-auto" />
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Palestrantes e Programação -->
-  <section id="palestrantes" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2 class="fw-bold">Palestrantes e Programação</h2>
-          <p class="lead">Confira os especialistas que farão parte do evento e os temas que serão abordados</p>
-          <hr class="divider mx-auto" />
-        </div>
-      </div>
-      
-      <div class="row g-4">
-        <!-- Palestrante 1 -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-img-top speaker-img-container">
-              <img src="images/png/1.png" alt="Patrícia Parreira" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-primary">Neuropediatria</h5>
-              <div class="d-flex justify-content-start align-items-center mb-3">
-                <h6 class="card-subtitle text-muted mb-0">Patrícia Parreira</h6>
-                <a href="https://www.instagram.com/dra.patiparreira/" target="_blank" class="text-decoration-none p-2">
+        <div class="row g-4">
+          <!-- Palestrante 1 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-img-top speaker-img-container">
+                <img
+                  src="images/png/1.png"
+                  alt="Patrícia Parreira"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Neuropediatria</h5>
+                <div
+                  class="d-flex justify-content-start align-items-center mb-3"
+                >
+                  <h6 class="card-subtitle text-muted mb-0">
+                    Patrícia Parreira
+                  </h6>
+                  <a
+                    href="https://www.instagram.com/dra.patiparreira/"
+                    target="_blank"
+                    class="text-decoration-none p-2"
+                  >
                     <i class="fab fa-instagram text-primary fa-lg"></i>
-                </a>
-              </div>
-              <p class="card-text">Como identificar atrasos no desenvolvimento neurológico?</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Palestrante 2 -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-img-top speaker-img-container">
-              <img src="images/png/2.png" alt="Larissa Souza" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-primary">Fonoaudiologia</h5>
-              <div class="d-flex justify-content-start align-items-center mb-3">
-                <h6 class="card-subtitle text-muted mb-0">Larissa Souza</h6>
-                <a href="https://www.instagram.com/comunicakids/" target="_blank" class="text-decoration-none p-2">
-                    <i class="fab fa-instagram text-primary fa-lg"></i>
-                </a>
-              </div>
-              <p class="card-text">Marcos da linguagem e sinais de alerta para dificuldades na comunicação</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Palestrante 3 -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-img-top speaker-img-container">
-              <img src="images/png/3.png" alt="Jéssika Medeiros" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-primary">Nutrição</h5>
-              <div class="d-flex justify-content-start align-items-center mb-3">
-                <h6 class="card-subtitle text-muted mb-0">Jéssika Medeiros</h6>
-                <a href="https://www.instagram.com/nutrijessikamedeiros/" target="_blank" class="text-decoration-none p-2">
-                    <i class="fab fa-instagram text-primary fa-lg"></i>
-                </a>
-              </div>
-              <p class="card-text">Seletividade alimentar: educação alimentar e nutricional como o caminho para a mudança</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Palestrante 4 -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-img-top speaker-img-container">
-              <img src="images/png/4.png" alt="Kelly Lopes" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-primary">Terapia Ocupacional</h5>
-              <div class="d-flex justify-content-start align-items-center mb-3">
-                <h6 class="card-subtitle text-muted mb-0">Kelly Lopes</h6>
-                <a href="https://www.instagram.com/sensorialkids.terapias/" target="_blank" class="text-decoration-none p-2">
-                    <i class="fab fa-instagram text-primary fa-lg"></i>
-                </a>
-              </div>
-              <p class="card-text">O Transtorno do Processamento Sensorial (TPS), suas características e demandas ocupacionais</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Palestrante 5 -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-img-top speaker-img-container">
-              <img src="images/png/5.png" alt="Camila Ferrari" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-primary">Neuropsicologia</h5>
-              <div class="d-flex justify-content-start align-items-center mb-3">
-                <h6 class="card-subtitle text-muted mb-0">Camila Ferrari</h6>
-                <a href="https://www.instagram.com/neurodesenvolvendo/" target="_blank" class="text-decoration-none p-2">
-                    <i class="fab fa-instagram text-primary fa-lg"></i>
-                </a>
-              </div>
-              <p class="card-text">Avaliação neuropsicológica: Por que? Quando? Como?</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Palestrante 6 -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow border-0">
-            <div class="card-img-top speaker-img-container">
-              <img src="images/png/6.png" alt="Socorro Santos" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-primary">Psicopedagogia</h5>
-              <div class="d-flex justify-content-start align-items-center mb-3">
-                <h6 class="card-subtitle text-muted mb-0">Socorro Santos</h6>
-                <a href="https://www.instagram.com/asocorrosantos/" target="_blank" class="text-decoration-none p-2">
-                    <i class="fab fa-instagram text-primary fa-lg"></i>
-                </a>
-              </div>
-              <p class="card-text">Plano de Ensino Individualizado (PEI) na infância: como transformar avaliações e diagnósticos em estratégias de ensino eficazes</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Local e Informações -->
-  <section id="local" class="py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <h2 class="fw-bold">Local e Informações</h2>
-          <hr class="divider ms-0" />
-          
-          <div class="event-details mt-4">
-            <p class="mb-3"><i class="far fa-calendar-alt me-2 text-quaternary"></i> <strong>Data:</strong> 05 de abril de 2025</p>
-            <p class="mb-3"><i class="fas fa-map-marker-alt me-2 text-quaternary"></i> <strong>Local:</strong> Auditório 360, torre A, Pátio Brasil Shopping</p>
-            <p class="mb-3"><i class="far fa-clock me-2 text-quaternary"></i> <strong>Duração:</strong> 08h30 às 18h30 (com 2 horas de intervalo para o almoço)</p>
-            <p class="mb-3"><i class="fas fa-car me-2 text-quaternary"></i> <strong>Estacionamento:</strong>R$ 10,00 o dia inteiro</p>
-            <p class="mb-3"><i class="fas fa-coffee me-2 text-quaternary"></i> <strong>Coffee break:</strong> Incluso</p>
-            <p class="mb-3"><i class="fas fa-certificate me-2 text-quaternary"></i> <strong>Certificado:</strong> Será enviado por e-mail, no prazo de uma semana</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="map-container shadow rounded overflow-hidden">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.1502531055435!2d-47.89458402308203!3d-15.796029422998934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ae5fdee6617%3A0x39b9c8b61be3a4fc!2sP%C3%A1tio%20Brasil%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1740840298834!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Inscrição -->
-  <section id="inscricao" class="py-5 bg-quaternary">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="fw-bold text-dark">Inscrição</h2>
-          <p class="lead text-dark">As vagas são limitadas! Garanta sua participação no Conexão Infância.</p>
-
-          
-          <div class="pricing-box bg-white p-5 mt-4 shadow rounded">
-            <h3 class="fw-bold text-primary mb-4">Valores de Inscrição</h3>
-            
-            <!-- Valor original e informações -->
-            <div class="mb-4 pb-3 border-bottom">
-              <div class="d-flex align-items-center justify-content-center mb-3">
-                <h2 class="display-5 fw-bold mb-0 me-2 text-muted"><s>R$ 197,00</s></h2>
-                <span class="badge bg-secondary rounded-pill px-3 py-2">Valor original</span>
-              </div>
-              <p>Incluso: Acesso a todas as palestras, material de apoio, coffee break e certificado.</p>
-            </div>
-            
-            <!-- Opções de inscrição -->
-            <div class="row g-3">
-              <!-- Lote promocional -->
-              <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body text-center">
-                    <span class="badge bg-primary mb-2">15% OFF</span>
-                    <h4 class="fw-bold text-primary">R$ 167,45</h4>
-                    <h6 class="card-subtitle mb-3 text-muted">Lote promocional</h6>
-                    <a href="https://pay.kiwify.com.br/vUIaBoM" target="_blank" class="btn btn-tertiary">
-                      Garanta sua vaga
-                    </a>
-                  </div>
+                  </a>
                 </div>
+                <p class="card-text">
+                  Como identificar atrasos no desenvolvimento neurológico?
+                </p>
               </div>
-              
-              <!-- Estudantes -->
-              <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body text-center">
-                    <span class="badge bg-primary mb-2">20% OFF</span>
-                    <h4 class="fw-bold text-primary">R$ 157,60</h4>
-                    <h6 class="card-subtitle mb-3 text-muted">Estudantes de Graduação</h6>
-                    <a href="https://pay.kiwify.com.br/2UvDJNA" target="_blank" class="btn btn-tertiary">
-                      Garanta sua vaga
-                    </a>
-                  </div>
+            </div>
+          </div>
+
+          <!-- Palestrante 2 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-img-top speaker-img-container">
+                <img
+                  src="images/png/2.png"
+                  alt="Larissa Souza"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Fonoaudiologia</h5>
+                <div
+                  class="d-flex justify-content-start align-items-center mb-3"
+                >
+                  <h6 class="card-subtitle text-muted mb-0">Larissa Souza</h6>
+                  <a
+                    href="https://www.instagram.com/comunicakids/"
+                    target="_blank"
+                    class="text-decoration-none p-2"
+                  >
+                    <i class="fab fa-instagram text-primary fa-lg"></i>
+                  </a>
                 </div>
+                <p class="card-text">
+                  Marcos da linguagem e sinais de alerta para dificuldades na
+                  comunicação.
+                </p>
               </div>
-              
-              <!-- Grupos -->
-              <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body text-center">
-                    <span class="badge bg-primary mb-2">25% OFF</span>
-                    <h4 class="fw-bold text-primary">R$ 147,75</h4>
-                    <h6 class="card-subtitle mb-3 text-muted">Grupo (acima de 3 pessoas)</h6>
-                    <a href="https://pay.kiwify.com.br/cXegaNg" target="_blank" class="btn btn-tertiary">
-                      Garanta sua vaga
-                    </a>
-                  </div>
+            </div>
+          </div>
+
+          <!-- Palestrante 3 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-img-top speaker-img-container">
+                <img
+                  src="images/png/3.png"
+                  alt="Jéssika Medeiros"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Nutrição</h5>
+                <div
+                  class="d-flex justify-content-start align-items-center mb-3"
+                >
+                  <h6 class="card-subtitle text-muted mb-0">
+                    Jéssika Medeiros
+                  </h6>
+                  <a
+                    href="https://www.instagram.com/nutrijessikamedeiros/"
+                    target="_blank"
+                    class="text-decoration-none p-2"
+                  >
+                    <i class="fab fa-instagram text-primary fa-lg"></i>
+                  </a>
                 </div>
+                <p class="card-text">
+                  Seletividade alimentar: educação alimentar e nutricional como
+                  o caminho para a mudança.
+                </p>
               </div>
-            </div>          
+            </div>
+          </div>
+
+          <!-- Palestrante 4 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-img-top speaker-img-container">
+                <img
+                  src="images/png/4.png"
+                  alt="Kelly Lopes"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">
+                  Terapia Ocupacional
+                </h5>
+                <div
+                  class="d-flex justify-content-start align-items-center mb-3"
+                >
+                  <h6 class="card-subtitle text-muted mb-0">Kelly Lopes</h6>
+                  <a
+                    href="https://www.instagram.com/sensorialkids.terapias/"
+                    target="_blank"
+                    class="text-decoration-none p-2"
+                  >
+                    <i class="fab fa-instagram text-primary fa-lg"></i>
+                  </a>
+                </div>
+                <p class="card-text">
+                  O Transtorno do Processamento Sensorial (TPS), suas
+                  características e demandas ocupacionais.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Palestrante 5 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-img-top speaker-img-container">
+                <img
+                  src="images/png/5.png"
+                  alt="Camila Ferrari"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Neuropsicologia</h5>
+                <div
+                  class="d-flex justify-content-start align-items-center mb-3"
+                >
+                  <h6 class="card-subtitle text-muted mb-0">Camila Ferrari</h6>
+                  <a
+                    href="https://www.instagram.com/neurodesenvolvendo/"
+                    target="_blank"
+                    class="text-decoration-none p-2"
+                  >
+                    <i class="fab fa-instagram text-primary fa-lg"></i>
+                  </a>
+                </div>
+                <p class="card-text">
+                  Avaliação neuropsicológica: Por quê? Quando? Como?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Palestrante 6 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow border-0">
+              <div class="card-img-top speaker-img-container">
+                <img
+                  src="images/png/6.png"
+                  alt="Socorro Santos"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Psicopedagogia</h5>
+                <div
+                  class="d-flex justify-content-start align-items-center mb-3"
+                >
+                  <h6 class="card-subtitle text-muted mb-0">Socorro Santos</h6>
+                  <a
+                    href="https://www.instagram.com/asocorrosantos/"
+                    target="_blank"
+                    class="text-decoration-none p-2"
+                  >
+                    <i class="fab fa-instagram text-primary fa-lg"></i>
+                  </a>
+                </div>
+                <p class="card-text">
+                  Plano de Ensino Individualizado (PEI) na infância: como
+                  transformar avaliações e diagnósticos em estratégias de ensino
+                  eficazes.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Modal de Inscrição -->
-  <!-- <div class="modal fade" id="inscricaoModal" tabindex="-1" aria-labelledby="inscricaoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="inscricaoModalLabel">Formulário de Inscrição</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="nome" class="form-label">Nome completo</label>
-              <input type="text" class="form-control" id="nome" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="telefone" class="form-label">Telefone</label>
-              <input type="tel" class="form-control" id="telefone" required>
-            </div>
-            <div class="mb-3">
-              <label for="profissao" class="form-label">Profissão</label>
-              <input type="text" class="form-control" id="profissao" required>
-            </div>
-            <div class="mb-3">
-              <label for="especialidade" class="form-label">Área de atuação ou especialidade</label>
-              <input type="text" class="form-control" id="especialidade">
-            </div>
-            <div class="mb-3">
-              <label for="cidade" class="form-label">Cidade/UF</label>
-              <input type="text" class="form-control" id="cidade" required>
-            </div>
-            <div class="mb-3">
-              <label for="comentarios" class="form-label">Comentários ou necessidades especiais</label>
-              <textarea class="form-control" id="comentarios" rows="3"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Finalizar Inscrição</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
+    <!-- Local e Informações -->
+    <section id="local" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold">Local e Informações</h2>
+            <hr class="divider ms-0" />
 
-  <!-- Contato -->
-  <section id="contato" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-4">
-          <h2 class="fw-bold">Contato</h2>
-          <p>Tem alguma dúvida? Fale conosco!</p>
-          <hr class="divider mx-auto" />
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <div class="contact-info text-center">
-            <p class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i> Email: <a href="mailto:eventos.conexaoinfancia@gmail.com">eventos.conexaoinfancia@gmail.com</a></p>
-            <p class="mb-3"><i class="fab fa-whatsapp me-2 text-primary"></i> WhatsApp: <a href="https://wa.me/5561981689674">(61) 98168-9674</a> (Vanessa) / <a href="https://wa.me/5561992095674">(61) 99209-5674</a> (Juliana)</p>
-            <p class="mb-4"><i class="fab fa-instagram me-2 text-primary"></i> Instagram: <a href="https://www.instagram.com/vanessadias.psi/" target="_blank">@vanessadias.psi</a> / <a href="https://www.instagram.com/espacodialogico/" target="_blank">@espacodialogico</a></p>
+            <div class="event-details mt-4">
+              <p class="mb-3">
+                <i class="far fa-calendar-alt me-2 text-quaternary"></i>
+                <strong>Data:</strong> 05 de abril de 2025
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-map-marker-alt me-2 text-quaternary"></i>
+                <strong>Local:</strong> Auditório 360, torre A, Pátio Brasil
+                Shopping
+              </p>
+              <p class="mb-3">
+                <i class="far fa-clock me-2 text-quaternary"></i>
+                <strong>Duração:</strong> 08h30 às 18h30 (com 2 horas de
+                intervalo para o almoço)
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-car me-2 text-quaternary"></i>
+                <strong>Estacionamento:</strong>R$ 10,00 o dia inteiro
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-coffee me-2 text-quaternary"></i>
+                <strong>Coffee break:</strong> Incluso
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-certificate me-2 text-quaternary"></i>
+                <strong>Certificado:</strong> Será enviado por e-mail, no prazo
+                de uma semana
+              </p>
+            </div>
           </div>
-          
-          <!-- <div class="contact-form bg-light p-4 rounded shadow-sm">
-            <h4 class="mb-4">Envie-nos uma mensagem</h4>
-            <form>
+          <div class="col-lg-6">
+            <div class="map-container shadow rounded overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.1502531055435!2d-47.89458402308203!3d-15.796029422998934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ae5fdee6617%3A0x39b9c8b61be3a4fc!2sP%C3%A1tio%20Brasil%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1740840298834!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inscrição -->
+    <section id="inscricao" class="py-5 bg-quaternary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="fw-bold text-dark">Inscrição</h2>
+            <p class="lead text-dark">
+              As vagas são limitadas! Garanta sua participação no Conexão
+              Infância.
+            </p>
+
+            <div class="pricing-box bg-white p-5 mt-4 shadow rounded">
+              <h3 class="fw-bold text-primary mb-4">Valores de Inscrição</h3>
+
+              <!-- Valor original e informações -->
+              <div class="mb-4 pb-3 border-bottom">
+                <div
+                  class="d-flex align-items-center justify-content-center mb-3"
+                >
+                  <h2 class="display-5 fw-bold mb-0 me-2 text-muted">
+                    <s>R$ 197,00</s>
+                  </h2>
+                  <span class="badge bg-secondary rounded-pill px-3 py-2"
+                    >Valor original</span
+                  >
+                </div>
+                <p class="text-muted">
+                  Incluso: Acesso a todas as palestras, material de apoio,
+                  coffee break e certificado.
+                </p>
+              </div>
+
+              <!-- Opções de inscrição -->
               <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="contactNome" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="contactNome" required>
+                <!-- Lote promocional -->
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card h-100 border-0 shadow-sm mobile-price-card">
+                    <div class="card-body text-center">
+                      <span class="badge bg-primary mb-2 mobile-badge"
+                        >15% OFF</span
+                      >
+                      <h4 class="fw-bold text-primary mobile-price">
+                        R$ 167,45
+                      </h4>
+                      <h6 class="card-subtitle mb-3 text-muted mobile-subtitle">
+                        Lote promocional
+                      </h6>
+                      <a
+                        href="https://pay.kiwify.com.br/vUIaBoM"
+                        target="_blank"
+                        class="btn btn-tertiary mobile-btn"
+                      >
+                        Garanta sua vaga
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <label for="contactEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="contactEmail" required>
+
+                <!-- Estudantes -->
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card h-100 border-0 shadow-sm mobile-price-card">
+                    <div class="card-body text-center">
+                      <span class="badge bg-primary mb-2 mobile-badge"
+                        >20% OFF</span
+                      >
+                      <h4 class="fw-bold text-primary mobile-price">
+                        R$ 157,60
+                      </h4>
+                      <h6 class="card-subtitle mb-3 text-muted mobile-subtitle">
+                        Estudantes de Graduação
+                      </h6>
+                      <a
+                        href="https://pay.kiwify.com.br/2UvDJNA"
+                        target="_blank"
+                        class="btn btn-tertiary mobile-btn"
+                      >
+                        Garanta sua vaga
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                  <label for="contactAssunto" class="form-label">Assunto</label>
-                  <input type="text" class="form-control" id="contactAssunto" required>
-                </div>
-                <div class="col-12">
-                  <label for="contactMensagem" class="form-label">Mensagem</label>
-                  <textarea class="form-control" id="contactMensagem" rows="4" required></textarea>
-                </div>
-                <div class="col-12 text-end">
-                  <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+
+                <!-- Grupos -->
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card h-100 border-0 shadow-sm mobile-price-card">
+                    <div class="card-body text-center">
+                      <span class="badge bg-primary mb-2 mobile-badge"
+                        >25% OFF</span
+                      >
+                      <h4 class="fw-bold text-primary mobile-price">
+                        R$ 147,75
+                      </h4>
+                      <h6 class="card-subtitle mb-3 text-muted mobile-subtitle">
+                        Grupo (acima de 3 pessoas)
+                      </h6>
+                      <a
+                        href="https://pay.kiwify.com.br/cXegaNg"
+                        target="_blank"
+                        class="btn btn-tertiary mobile-btn"
+                      >
+                        Garanta sua vaga
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </form>
-          </div> -->
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <p class="small mb-0">© 2025 Conexão Infância. Todos os direitos reservados.</p>
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="fw-bold">Contato</h2>
+            <p>Tem alguma dúvida? Fale conosco!</p>
+            <hr class="divider mx-auto" />
+          </div>
         </div>
-        <div class="col-md-6 text-center text-md-end">
-          <img src="images/negativo-2.svg" alt="Conexão Infância Logo" height="40" class="mb-3">
+
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="contact-info text-center">
+              <p class="mb-3">
+                <i class="fas fa-envelope me-2 text-primary"></i> Email:
+                <a href="mailto:eventos.conexaoinfancia@gmail.com"
+                  >eventos.conexaoinfancia@gmail.com</a
+                >
+              </p>
+              <p class="mb-3">
+                <i class="fab fa-whatsapp me-2 text-primary"></i> WhatsApp
+                (Juliana):
+                <a href="https://wa.me/5561992095674">(61) 99209-5674</a>
+              </p>
+              <p class="mb-3">
+                <i class="fab fa-whatsapp me-2 text-primary"></i> WhatsApp
+                (Vanessa):
+                <a href="https://wa.me/5561981689674">(61) 98168-9674</a>
+              </p>
+              <p class="mb-4">
+                <i class="fab fa-instagram me-2 text-primary"></i> Instagram:
+                <a
+                  href="https://www.instagram.com/espacodialogico/"
+                  target="_blank"
+                  >@espacodialogico</a
+                >
+                /
+                <a
+                  href="https://www.instagram.com/vanessadias.psi/"
+                  target="_blank"
+                  >@vanessadias.psi</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script src="js/main.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="small mb-0">
+              © 2025 Conexão Infância. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <img
+              src="images/negativo-2.svg"
+              alt="Conexão Infância Logo"
+              height="40"
+              class="mb-3"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

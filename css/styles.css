@@ -243,3 +243,51 @@
   .card:hover .speaker-img-container img {
     transform: scale(1.05);
   }
+
+  /* Estilos responsivos para a seção de preços */
+@media (max-width: 768px) {
+    .mobile-price-card {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    
+    .mobile-price {
+      font-size: 2rem !important; /* Preço maior em celulares */
+    }
+    
+    .mobile-subtitle {
+      font-size: 1.1rem !important; /* Subtítulo maior em celulares */
+    }
+    
+    .mobile-badge {
+      font-size: 1rem !important;
+      padding: 8px 15px !important;
+    }
+    
+    .mobile-btn {
+      padding: 12px 20px !important;
+      font-size: 1.1rem !important;
+      width: 100%; /* Botão ocupa toda a largura */
+      margin-top: 10px;
+    }
+    
+    .pricing-box {
+      padding: 20px !important;
+    }
+    
+    /* Ajuste para o preço original */
+    .pricing-box .display-5 {
+      font-size: 2.2rem !important;
+    }
+  }
+  
+  /* Ajustes adicionais para telas muito pequenas */
+  @media (max-width: 375px) {
+    .pricing-box {
+      padding: 15px !important;
+    }
+    
+    .mobile-price {
+      font-size: 1.8rem !important;
+    }
+  }
