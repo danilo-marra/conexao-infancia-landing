@@ -186,15 +186,24 @@
   }
   
   /* Cards */
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    overflow: hidden;
+  .card, .pricing-box, h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
   
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Desative animações para usuários que preferem movimento reduzido */
+  @media (prefers-reduced-motion: reduce) {
+    .card, .pricing-box, h2 {
+      transition: none;
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   /* Pricing Box */
