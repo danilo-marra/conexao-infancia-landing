@@ -162,7 +162,6 @@
   
   .navbar .nav-link {
     font-weight: 500;
-    color: #333 !important;
     position: relative;
     padding: 0.5rem 1rem !important;
   }
@@ -300,3 +299,116 @@
       font-size: 1.8rem !important;
     }
   }
+
+  /* Estilos para a galeria de fotos */
+.gallery-item {
+  height: 250px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Estilo especial para o botão de download */
+.download-btn {
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .gallery-item {
+    height: 200px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Estilos para o modal lightbox */
+#imageModal .modal-content {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#imageModal .modal-dialog {
+  max-width: 90vw;
+}
+
+#imageModal .modal-body {
+  padding: 0;
+  position: relative;
+}
+
+#modalImage {
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+#imageModal .modal-footer {
+  background-color: transparent;
+}
+
+#imageModal .btn-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 1050;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+#imageModal .btn-close:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Adicionar um cursor de mão nas imagens da galeria */
+.gallery-item {
+  cursor: pointer;
+}
+
+/* Adicionar uma pequena animação quando houver hover */
+.gallery-item::after {
+  content: '\f00e';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}

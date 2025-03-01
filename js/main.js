@@ -79,3 +79,4 @@ document.addEventListener('DOMContentLoaded', function() {
     [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
   }
 });
+
