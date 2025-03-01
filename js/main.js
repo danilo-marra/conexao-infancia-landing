@@ -22,21 +22,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Animação de elementos quando ficam visíveis
-  function animateOnScroll() {
-    const elements = document.querySelectorAll('.card, .pricing-box, h2');
-    
-    elements.forEach(element => {
-      const elementPosition = element.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.2;
-      
-      if (elementPosition < screenPosition) {
-        element.classList.add('animate-in');
+  // Versão otimizada da animação de elementos
+  const animateElements = document.querySelectorAll('.card, .pricing-box, h2');
+  
+  // Usa IntersectionObserver para detectar quando elementos entram na viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      // Adiciona a classe apenas quando o elemento entra em vista
+      if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
+        // Pequeno atraso para evitar animações simultâneas
+        setTimeout(() => {
+          entry.target.classList.add('animate-in');
+        }, 50);
       }
     });
-  }
+  }, {
+    root: null, // viewport
+    threshold: 0.1, // 10% do elemento visível
+    rootMargin: '-50px' // margem negativa para animar um pouco antes
+  });
   
-  // Inicializa a animação e adiciona evento de scroll
-  animateOnScroll();
-  window.addEventListener('scroll', animateOnScroll);
+  // Observa todos os elementos que queremos animar
+  animateElements.forEach(element => {
+    observer.observe(element);
+  });
 });
