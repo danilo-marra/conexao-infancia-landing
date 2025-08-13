@@ -1,327 +1,413 @@
 :root {
-    --primary: #8E44AD;
-    --primary-dark: #7D3C98;
-    --secondary: #F39C12;
-    --secondary-dark: #D35400;
-    --tertiary: #FF004B;  /* Corrigi o ## para # */
-    --tertiary-dark: #CC0039;
-    --quaternary: #7DCFBA;
-  }
-  
-  body {
-    font-family: 'Nunito', Arial, sans-serif;
-    color: #333;
-    padding-top: 76px;
-  }
-  
-  /* Custom Bootstrap Colors - Primary */
-  .btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-  }
-  
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-  }
-  
-  .text-primary {
-    color: var(--primary) !important;
-  }
-  
-  /* Custom Bootstrap Colors - Secondary */
-  .btn-secondary {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
-    color: #fff;
-  }
-  
-  .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-    background-color: var(--secondary-dark);
-    border-color: var(--secondary-dark);
-    color: #fff;
-  }
-  
-  .text-secondary {
-    color: var(--secondary) !important;
-  }
-  
-  /* Custom Bootstrap Colors - Tertiary */
-  .btn-tertiary {
-    background-color: var(--tertiary);
-    border-color: var(--tertiary);
-    color: #fff;
-  }
-  
-  .btn-tertiary:hover, .btn-tertiary:focus, .btn-tertiary:active {
-    background-color: var(--tertiary-dark);
-    border-color: var(--tertiary-dark);
-    color: #fff;
-  }
-  
-  .text-tertiary {
-    color: var(--tertiary) !important;
-  }
+  --primary: #8e44ad;
+  --primary-dark: #7d3c98;
+  --secondary: #f39c12;
+  --secondary-dark: #d35400;
+  --tertiary: #ff004b; /* Corrigi o ## para # */
+  --tertiary-dark: #cc0039;
+  --quaternary: #7dcfba;
+}
 
-  .btn-quaternary {
-    background-color: var(--quaternary);
-    border-color: var(--quaternary);
-    color: #fff;
-  }
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  color: #333;
+  padding-top: 76px;
+}
 
-    .btn-quaternary:hover, .btn-quaternary:focus, .btn-quaternary:active {
-        background-color: var(--quaternary-dark);
-        border-color: var(--quaternary-dark);
-        color: #fff;
-    }
+/* Custom Bootstrap Colors - Primary */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
 
-  .text-quaternary {
-    color: var(--quaternary) !important;
-  }
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
 
-  /* Background Color Classes */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+/* Custom Bootstrap Colors - Secondary */
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+  color: #fff;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+/* Custom Bootstrap Colors - Tertiary */
+.btn-tertiary {
+  background-color: var(--tertiary);
+  border-color: var(--tertiary);
+  color: #fff;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus,
+.btn-tertiary:active {
+  background-color: var(--tertiary-dark);
+  border-color: var(--tertiary-dark);
+  color: #fff;
+}
+
+.text-tertiary {
+  color: var(--tertiary) !important;
+}
+
+.btn-quaternary {
+  background-color: var(--quaternary);
+  border-color: var(--quaternary);
+  color: #fff;
+}
+
+.btn-quaternary:hover,
+.btn-quaternary:focus,
+.btn-quaternary:active {
+  background-color: var(--quaternary-dark);
+  border-color: var(--quaternary-dark);
+  color: #fff;
+}
+
+.text-quaternary {
+  color: var(--quaternary) !important;
+}
+
+/* Background Color Classes */
 .bg-primary {
-    background-color: var(--primary) !important;
-    color: #fff !important;
-  }
-  
-  .bg-primary-dark {
-    background-color: var(--primary-dark) !important;
-    color: #fff !important;
-  }
-  
-  .bg-primary-light {
-    background-color: rgba(142, 68, 173, 0.15) !important;
-    color: var(--primary) !important;
-  }
-  
-  .bg-secondary {
-    background-color: var(--secondary) !important;
-    color: #fff !important;
-  }
-  
-  .bg-secondary-dark {
-    background-color: var(--secondary-dark) !important;
-    color: #fff !important;
-  }
-  
-  .bg-secondary-light {
-    background-color: rgba(243, 156, 18, 0.15) !important;
-    color: var(--secondary-dark) !important;
-  }
-  
-  .bg-tertiary {
-    background-color: var(--tertiary) !important;
-    color: #fff !important;
-  }
-  
-  .bg-tertiary-dark {
-    background-color: var(--tertiary-dark) !important;
-    color: #fff !important;
-  }
-  
-  .bg-tertiary-light {
-    background-color: rgba(255, 0, 75, 0.15) !important;
-    color: var(--tertiary) !important;
-  }
-  
-  .bg-quaternary {
-    background-color: var(--quaternary) !important;
-    color: #fff !important;
-  }
-  
-  .bg-quaternary-dark {
-    background-color: var(--quaternary-dark) !important;
-    color: #fff !important;
-  }
-  
-  .bg-quaternary-light {
-    background-color: rgba(125, 207, 186, 0.15) !important;
-    color: #28756A !important;
-  }
-  
-  /* Sections */
-  section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
-  /* Divider */
-  hr.divider {
-    max-width: 100px;
-    height: 3px;
-    background-color: var(--primary);
-    opacity: 1;
-    margin: 1.5rem auto;
-  }
-  
-  /* NavBar */
-  .navbar {
-    transition: all 0.3s ease;
-  }
-  
-  .navbar .nav-link {
-    font-weight: 500;
-    position: relative;
-    padding: 0.5rem 1rem !important;
-  }
-  
-  .navbar .nav-link:hover::after {
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 2px;
-    background-color: var(--primary);
-    bottom: 0;
-    left: 20%;
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    background-color: #f9f9f9;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Cards */
-  .card, .pricing-box, h2 {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
 
-  .mobile-price-card .card-subtitle {
-    min-height: 40px; /* Altura mínima para acomodar duas linhas de texto */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .mobile-price-card .card-text {
-    flex-grow: 1; /* Faz com que este elemento ocupe todo o espaço disponível */
-  }
-  
-  .mobile-price-card .mobile-btn {
-    margin-top: auto; /* Empurra o botão para o final do card */
-  }
+.bg-primary-dark {
+  background-color: var(--primary-dark) !important;
+  color: #fff !important;
+}
 
-  .mobile-price-card .card-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .visible {
+.bg-primary-light {
+  background-color: rgba(142, 68, 173, 0.15) !important;
+  color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+  color: #fff !important;
+}
+
+.bg-secondary-dark {
+  background-color: var(--secondary-dark) !important;
+  color: #fff !important;
+}
+
+.bg-secondary-light {
+  background-color: rgba(243, 156, 18, 0.15) !important;
+  color: var(--secondary-dark) !important;
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary) !important;
+  color: #fff !important;
+}
+
+.bg-tertiary-dark {
+  background-color: var(--tertiary-dark) !important;
+  color: #fff !important;
+}
+
+.bg-tertiary-light {
+  background-color: rgba(255, 0, 75, 0.15) !important;
+  color: var(--tertiary) !important;
+}
+
+.bg-quaternary {
+  background-color: var(--quaternary) !important;
+  color: #fff !important;
+}
+
+.bg-quaternary-dark {
+  background-color: var(--quaternary-dark) !important;
+  color: #fff !important;
+}
+
+.bg-quaternary-light {
+  background-color: rgba(125, 207, 186, 0.15) !important;
+  color: #28756a !important;
+}
+
+/* Sections */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Divider */
+hr.divider {
+  max-width: 100px;
+  height: 3px;
+  background-color: var(--primary);
+  opacity: 1;
+  margin: 1.5rem auto;
+}
+
+/* NavBar */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+}
+
+.navbar .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: var(--primary);
+  bottom: 0;
+  left: 20%;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f9f9f9;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Cards */
+.card,
+.pricing-box,
+h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.mobile-price-card .card-subtitle {
+  min-height: 40px; /* Altura mínima para acomodar duas linhas de texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-price-card .card-text {
+  flex-grow: 1; /* Faz com que este elemento ocupe todo o espaço disponível */
+}
+
+.mobile-price-card .mobile-btn {
+  margin-top: auto; /* Empurra o botão para o final do card */
+}
+
+.mobile-price-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Desative animações para usuários que preferem movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .pricing-box,
+  h2 {
+    transition: none;
     opacity: 1;
     transform: translateY(0);
   }
-  
-  /* Desative animações para usuários que preferem movimento reduzido */
-  @media (prefers-reduced-motion: reduce) {
-    .card, .pricing-box, h2 {
-      transition: none;
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+/* Pricing Box */
+.pricing-box {
+  border-radius: 15px;
+}
+
+/* Custom Animations */
+.animate-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  /* Pricing Box */
-  .pricing-box {
-    border-radius: 15px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Custom Animations */
-  .animate-in {
-    animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-top: 66px;
   }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+
+  .hero-section {
+    min-height: auto;
+    padding-top: 80px;
   }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    body {
-      padding-top: 66px;
-    }
-    
-    .hero-section {
-      min-height: auto;
-      padding-top: 80px;
-    }
-    
-    hr.divider {
-      max-width: 60px;
-    }
+
+  hr.divider {
+    max-width: 60px;
   }
+}
 
 .speaker-img-container {
-    overflow: hidden;
-    height: 400px;
-  }
-  
-  .speaker-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .card:hover .speaker-img-container img {
-    transform: scale(1.05);
-  }
+  overflow: hidden;
+  height: 400px;
+}
 
-  /* Estilos responsivos para a seção de preços */
+.speaker-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.speaker-img-container img.circular {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-position: center;
+  margin: 50px auto;
+  display: block;
+}
+
+.card:hover .speaker-img-container img {
+  transform: scale(1.05);
+}
+
+/* Layout para 5 palestrantes - 2 na primeira linha, 3 na segunda */
+.speakers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.speakers-row-1 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.speakers-row-1 .speaker-card {
+  flex: 0 0 calc(33.333% - 1rem);
+  max-width: 350px;
+}
+
+.speakers-row-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.speakers-row-2 .speaker-card {
+  flex: 0 0 calc(25% - 1rem);
+  max-width: 300px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 992px) {
+  .speakers-row-1 .speaker-card,
+  .speakers-row-2 .speaker-card {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: none;
+  }
+}
+
+/* Responsividade para mobile */
 @media (max-width: 768px) {
-    .mobile-price-card {
-      margin-bottom: 20px;
-      padding: 10px;
-    }
-    
-    .mobile-price {
-      font-size: 2rem !important; /* Preço maior em celulares */
-    }
-    
-    .mobile-subtitle {
-      font-size: 1.1rem !important; /* Subtítulo maior em celulares */
-    }
-    
-    .mobile-badge {
-      font-size: 1rem !important;
-      padding: 8px 15px !important;
-    }
-    
-    .mobile-btn {
-      padding: 12px 20px !important;
-      font-size: 1.1rem !important;
-      width: 100%; /* Botão ocupa toda a largura */
-      margin-top: 10px;
-    }
-    
-    .pricing-box {
-      padding: 20px !important;
-    }
-    
-    /* Ajuste para o preço original */
-    .pricing-box .display-5 {
-      font-size: 2.2rem !important;
-    }
-  }
-  
-  /* Ajustes adicionais para telas muito pequenas */
-  @media (max-width: 375px) {
-    .pricing-box {
-      padding: 15px !important;
-    }
-    
-    .mobile-price {
-      font-size: 1.8rem !important;
-    }
+  .speakers-container {
+    gap: 1rem;
   }
 
-  /* Estilos para a galeria de fotos */
+  .speakers-row-1,
+  .speakers-row-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .speakers-row-1 .speaker-card,
+  .speakers-row-2 .speaker-card {
+    flex: none;
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Estilos responsivos para a seção de preços */
+@media (max-width: 768px) {
+  .mobile-price-card {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .mobile-price {
+    font-size: 2rem !important; /* Preço maior em celulares */
+  }
+
+  .mobile-subtitle {
+    font-size: 1.1rem !important; /* Subtítulo maior em celulares */
+  }
+
+  .mobile-badge {
+    font-size: 1rem !important;
+    padding: 8px 15px !important;
+  }
+
+  .mobile-btn {
+    padding: 12px 20px !important;
+    font-size: 1.1rem !important;
+    width: 100%; /* Botão ocupa toda a largura */
+    margin-top: 10px;
+  }
+
+  .pricing-box {
+    padding: 20px !important;
+  }
+
+  /* Ajuste para o preço original */
+  .pricing-box .display-5 {
+    font-size: 2.2rem !important;
+  }
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 375px) {
+  .pricing-box {
+    padding: 15px !important;
+  }
+
+  .mobile-price {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* Estilos para a galeria de fotos */
 .gallery-item {
   height: 250px;
   transition: all 0.3s ease;
@@ -361,7 +447,7 @@
 
 .download-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Ajustes para mobile */
@@ -417,8 +503,8 @@
 
 /* Adicionar uma pequena animação quando houver hover */
 .gallery-item::after {
-  content: '\f00e';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f00e";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
   top: 50%;
